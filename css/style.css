@@ -1,1 +1,204 @@
-/* ini cuma contoh aja */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome {
+    text-align: left;
+    padding: 0px 70px 0px 70px;
+    margin-bottom: 40px;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-container {
+    height: 258px;
+    /* border: 1px solid black; */
+}
+
+
+.facilitation {
+    padding: 0px 70px 0px 70px;
+    margin-bottom: 40px;
+}
+
+.facilities {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.facility {
+    margin: 0 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.icon {
+    width: 200px;
+    height: 200px;
+    background-image: url(https://picsum.photos/200);
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+/* Message Us Styles */
+.message-us {
+    text-align: left;
+    flex: 1; /* Adjusted to use flex for responsive design */
+    margin-bottom: 80px;
+    padding: 0px 70px 0px 70px;
+}
+
+.message-us h2 {
+    text-align: left;
+}
+
+.message-us form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Chatbox Styles */
+.chatbox {
+    flex: 1; /* Adjusted to use flex for responsive design */
+    text-align: left;
+}
+
+.chatbox h2 {
+    text-align: left;
+}
+
+.chatbox-messages {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 15px;
+}
+
+#chatbox-form {
+    display: flex;
+}
+
+#chatbox-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#chatbox-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .facilities {
+        flex-direction: column;
+    }
+
+    .facility {
+        margin: 10px 0;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .message-us,
+    .chatbox {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
